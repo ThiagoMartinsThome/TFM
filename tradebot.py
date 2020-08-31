@@ -1,5 +1,5 @@
-"""#### Trading Bot ####"""
-#https://us-central1-tradebot-tfm.cloudfunctions.net/predict
+"""#### Trade Bot ####"""
+
 
 """# Libraries"""
 import pandas as pd
@@ -15,10 +15,6 @@ from pypfopt.discrete_allocation import DiscreteAllocation, get_latest_prices
 import pytz
 from datetime import datetime
 import os
-
-
-#credentials_path = "/Users/thiago/PycharmProjects/tradebot_tfm/keys/tradebot-tfm.json"
-#os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
 
 """# Get keys"""
 # Get the Alpaca api keys from cloud storage
@@ -206,9 +202,6 @@ def get_top_stocks(df, df_pred, date, cash, df_pf, pf_size=20):
     return round(df_buy[['ticker', 'close', 'quantity', 'amount_held']], 2), sell_list
 
 
-
-
-
 """# Create a list of stocks to sell based on what is currently in our pf"""
 def sell_stocks(df, df_pf, sell_list, date):
     """# Get the current prices and the number of shares to sell"""
@@ -359,8 +352,6 @@ def buy_order(df_buy_new):
                 )
         except Exception:
             pass
-
-
 
 def strategy_log(df_buy_new, df_sell_final):
 
