@@ -283,8 +283,6 @@ if st.sidebar.checkbox("Portfolio Management"):
             df, df_pred, current_data_date = tb.get_predictions()
             return df, df_pred, current_data_date
         df, df_pred, current_data_date = get_predictions()
-        st.write(df_pred)
-
 
         st.subheader("Stocks predictions: % earnings expected for the next 20 days")
         pred_table = df_pred[["ticker", "long_name", "predictions", "recommendations"]]
