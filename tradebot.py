@@ -17,8 +17,8 @@ from datetime import datetime
 import os
 
 
-credentials_path = "/Users/thiago/PycharmProjects/tradebot_tfm/keys/tradebot-tfm.json"
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
+#credentials_path = "/Users/thiago/PycharmProjects/tradebot_tfm/keys/tradebot-tfm.json"
+#os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
 
 """# Get keys"""
 # Get the Alpaca api keys from cloud storage
