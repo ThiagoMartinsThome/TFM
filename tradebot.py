@@ -1,5 +1,4 @@
 """#### Trading Bot ####"""
-#https://us-central1-tradebot-tfm.cloudfunctions.net/predict
 
 """# Libraries"""
 import pandas as pd
@@ -15,10 +14,6 @@ from pypfopt.discrete_allocation import DiscreteAllocation, get_latest_prices
 import pytz
 from datetime import datetime
 import os
-
-
-credentials_path = "/Users/thiago/PycharmProjects/tradebot_tfm/keys/tradebot-tfm.json"
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
 
 """# Get keys"""
 # Get the Alpaca api keys from cloud storage
