@@ -1,6 +1,6 @@
 # TRADEBOT_TFM
 
-## Link: https://tradebot-tfm.herokuapp.com/
+## Webapp link: https://tradebot-tfm.herokuapp.com/
 
 • Definition: Trading bots are computer programs that use various indicators to recognize trends and automatically execute trades.
 
@@ -68,10 +68,10 @@
         - Graphic Analysis (RSI, Candlestick, MACD, Volume)
         
     - Portfolio Management:
-      1. Porfolio information:
+      1. Portfolio information:
         - Buying power
         - Cash
-        - Porfolio value
+        - Portfolio value
         - Balance
         - Total profit/loss
        2. Equity profit/loss history
