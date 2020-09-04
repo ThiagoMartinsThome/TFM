@@ -1,6 +1,11 @@
 # TRADEBOT_TFM
 
 ## Webapp link: https://tradebot-tfm.herokuapp.com/
+### Google cloud platform project: 
+
+    - Project name:  tradebot-tfm
+    - Project ID:    tradebot-tfm
+    - Project number: 722404928924
 
 • Definition: Trading bots are computer programs that use various indicators to recognize trends and automatically execute trades.
 
