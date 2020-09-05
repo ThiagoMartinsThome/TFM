@@ -1,3 +1,5 @@
+# Requirements to deploy on heroku
+
 yfinance==0.1.54
 pandas==1.1.0
 finta==1.0
@@ -7,7 +9,6 @@ google-cloud-bigquery-storage==1.0.0
 google-cloud-storage==1.30.0
 pyarrow==1.0.0
 lxml==4.5.2
-#tensorflow==2.3.0
 joblib==0.16.0
 fastparquet==0.4.1
 sklearn==0.0
