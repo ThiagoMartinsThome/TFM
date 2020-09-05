@@ -7,8 +7,7 @@
     - Project ID:    tradebot-tfm
     - Project number: 722404928924
     
- ### Project enviroment
- pip install -r requirements.txt
+ • Project enviroment: pip install -r requirements.txt
 
 • Definition: Trading bots are computer programs that use various indicators to recognize trends and automatically execute trades.
 
