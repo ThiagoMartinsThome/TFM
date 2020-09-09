@@ -41,7 +41,7 @@
       4. Test and evaluate and save the best model
       5. Load the model in the google cloud platform (CloudStorage)
       
-    - Create a function in the cloud to predict daily. "gcp_get_predictions.py"
+    - Create a function in the cloud to predict daily. "predictions_[model_name].py"
       1. Load the historical data from BigQuery.
       2. Load the model from Cloud Storage.
       3. Predict
