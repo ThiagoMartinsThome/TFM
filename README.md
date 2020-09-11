@@ -7,24 +7,24 @@
     - Project ID:    tradebot-tfm
     - Project number: 722404928924
     
- • Project enviroment: pip install -r requirements.txt
+ • Project environment: pip install -r requirements.txt
 
 • Definition: Trading bots are computer programs that use various indicators to recognize trends and automatically execute trades.
 
 
 • Project Objectives:
 
-  - Build a Bot that can predict the short-term stock movements (next 20 labor day trend) of the Top companies listed in the SP&500 index using Quantitative Finance and Machine Learning methods. For that I'm going to use Google Cloud Plataform to automate the process and as a BBDD,  Alpaca as a trade paper API to back test the performance and simulate a real market, and finally I will use Streamlit as a front end platform and Heroku for deploying.
+  - Build a Bot that can predict the short-term stock movements (next 20 labor day trend) of the Top companies listed in the SP&500 index using Quantitative Finance and Machine Learning methods. For that I'm going to use Google Cloud Platform to automate the process and as a BBDD,  Alpaca as a trade paper API to back test the performance and simulate a real market, and finally I will use Streamlit as a front end platform and Heroku for deploying.
   
 • Project Structure:
 
   - ETL process (extract, transform, load):
     
-    - Extract the data. "gcp_daily_data.py" to be impemented as a cloud function with a weekday scheduler and "get_data.py" for manual extraction: 
+    - Extract the data. "gcp_daily_data.py" to be implemented as a cloud function with a weekday scheduler and "get_data.py" for manual extraction: 
       1. This function extract the data of the SP&500 index and the top companies listed in (yfinance library).
       2. Feature extraction using the most common technical indicators (finta library).
       3. Calculate the target (short-term stock movements for next 20 labor days trend).
-      4. Scrapp the company information like: long_name, sector and industry.
+      4. Scrap the company information like: long_name, sector and industry.
       5. Save a train dataset and a historical dataset (do not include the target values) as csv file.
       6. Load the historical dataset in the google cloud platform (Cloud Storage / BigQuery).
       
@@ -39,7 +39,7 @@
         - Bidirectional LSTM model
         - ConvLSTM2D model
       4. Test and evaluate and save the best model
-      5. Load the model in the google cloud platform (CloudStorage)
+      5. Load the model in the google cloud platform (Cloud Storage)
       
     - Create a function in the cloud to predict daily. "predictions_[model_name].py"
       1. Load the historical data from BigQuery.
@@ -97,7 +97,7 @@
   - Deploy the project online:
     
     - Heroku:
-      1. Create a a setup.sh and a profile files to connect with streamlit.
+      1. Create a setup.sh and a profile files to connect with streamlit.
       2. Set config variables to store the google cloud credentials.
       3. Deploy the model throughout github.
       
